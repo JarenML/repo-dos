@@ -5,6 +5,11 @@ def adornar_funcion(funcion):
         print("*************")
     return funcion_adornada
 
-@adornar_funcion
+
 def saludar():
     print("Buenos dias")
+
+
+saludar = adornar_funcion(saludar)
+
+saludar()
